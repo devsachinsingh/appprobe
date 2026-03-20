@@ -1,0 +1,25 @@
+{
+  "name": "app_probe",
+  "version": "1.0.0",
+  "private": true,
+  "workspaces": [
+    "packages/cli",
+    "packages/core",
+    "packages/skills"
+  ],
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "@typescript-eslint/eslint-plugin": "^7.0.0",
+    "@typescript-eslint/parser": "^7.0.0",
+    "esbuild": "^0.27.4",
+    "eslint": "^8.57.0",
+    "prettier": "^3.0.0",
+    "typescript": "^5.4.0"
+  },
+  "scripts": {
+    "build": "node scripts/build.js",
+    "dev": "node scripts/build.js --watch",
+    "lint": "eslint packages/*/src/**/*.ts",
+    "typecheck": "cd packages/cli && tsc --noEmit"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "name": "@appprobe/core",
+  "version": "1.0.0",
+  "main": "src/orchestrator.ts",
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.14.0"
+  }
+}

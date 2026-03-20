@@ -1,0 +1,15 @@
+{
+  "name": "@appprobe/cli",
+  "version": "1.0.0",
+  "main": "src/cli.ts",
+  "bin": {
+    "appprobe": "src/cli.ts"
+  },
+  "dependencies": {
+    "commander": "^11.0.0",
+    "chalk": "^4.1.2",
+    "ora": "^5.4.1",
+    "@appprobe/core": "*",
+    "@appprobe/skills": "*"
+  }
+}
