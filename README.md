@@ -10,7 +10,7 @@
 
 ## The problem
 
-You have a 5-year-old iOS or Android project. You want to add a new module using Claude Code or Cursor. But the AI has no idea:
+You have a old iOS or Android project. You want to add a new module using Claude Code or Cursor. But the AI has no idea:
 
 - That you use Alamofire 4 (not 5), and the patterns are different
 - That Firebase Crashlytics replaced the old Fabric SDK halfway through
