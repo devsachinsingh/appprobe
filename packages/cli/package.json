@@ -17,23 +17,23 @@
     "code-review",
     "appprobe"
   ],
-  "homepage": "https://github.com/yourorg/app_probe#readme",
+  "homepage": "https://github.com/devsachinsingh/appprobe#readme",
   "repository": {
     "type": "git",
-    "url": "https://github.com/yourorg/app_probe.git"
+    "url": "https://github.com/devsachinsingh/appprobe.git"
   },
   "bugs": {
-    "url": "https://github.com/yourorg/app_probe/issues"
+    "url": "https://github.com/devsachinsingh/appprobe/issues"
   },
   "license": "MIT",
-  "main": "dist/index.js",
+  "main": "dist/appprobe.js",
   "bin": {
-    "appprobe": "./dist/cli.js"
+    "appprobe": "./dist/appprobe.js"
   },
   "scripts": {
     "build": "node ../../scripts/build.js",
     "dev": "tsc --watch",
-    "start": "node dist/cli.js"
+    "start": "node dist/appprobe.js"
   },
   "dependencies": {
     "chalk": "^4.1.2",
@@ -48,7 +48,8 @@
     "node": ">=18.0.0"
   },
   "files": [
-    "dist/cli.js",
+    "dist/appprobe.js",
+    "dist/appprobe.js.map",
     "README.md",
     "LICENSE"
   ]

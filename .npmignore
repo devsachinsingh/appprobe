@@ -1,0 +1,23 @@
+# Source
+packages/
+scripts/
+src/
+
+# Dev files
+node_modules/
+*.log
+.env
+.env.local
+.DS_Store
+.vscode/
+.idea/
+*.tsbuildinfo
+
+# Test
+test-fixtures/
+mnt/
+
+# Config (not needed at runtime)
+.eslintrc*
+.prettierrc*
+tsconfig*.json
