@@ -9,7 +9,7 @@ async function run() {
     entryPoints: ['packages/cli/src/cli.ts'],
     bundle: true,
     platform: 'node',
-    outfile: 'dist/appprobe.js',
+    outfile: 'packages/cli/dist/appprobe.js',
     format: 'cjs',
     sourcemap: true,
     packages: 'bundle', // external: ['commander', 'chalk', 'ora', '@anthropic-ai/sdk'] or better bundle everything except what's not needed?
@@ -29,7 +29,7 @@ async function run() {
       console.log('Watching for changes...');
     } else {
       await build(buildOptions);
-      console.log('Build successful: dist/appprobe.js');
+      console.log('Build successful: packages/cli/dist/appprobe.js');
     }
   } catch (err) {
     console.error('Build failed:', err);
