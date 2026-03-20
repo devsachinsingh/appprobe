@@ -1,15 +1,55 @@
 {
-  "name": "@appprobe/cli",
+  "name": "appprobe",
   "version": "1.0.0",
-  "main": "src/cli.ts",
+  "description": "AI-powered mobile project scanner. Writes skill.md context files for legacy iOS & Android projects.",
+  "keywords": [
+    "mobile",
+    "ios",
+    "android",
+    "swift",
+    "kotlin",
+    "static-analysis",
+    "ai",
+    "claude",
+    "cursor",
+    "legacy",
+    "skill",
+    "code-review",
+    "appprobe"
+  ],
+  "homepage": "https://github.com/yourorg/app_probe#readme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourorg/app_probe.git"
+  },
+  "bugs": {
+    "url": "https://github.com/yourorg/app_probe/issues"
+  },
+  "license": "MIT",
+  "main": "dist/index.js",
   "bin": {
-    "appprobe": "src/cli.ts"
+    "appprobe": "./dist/cli.js"
+  },
+  "scripts": {
+    "build": "node ../../scripts/build.js",
+    "dev": "tsc --watch",
+    "start": "node dist/cli.js"
   },
   "dependencies": {
-    "commander": "^11.0.0",
     "chalk": "^4.1.2",
     "ora": "^5.4.1",
-    "@appprobe/core": "*",
-    "@appprobe/skills": "*"
-  }
+    "commander": "^12.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "typescript": "^5.4.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "files": [
+    "dist/cli.js",
+    "README.md",
+    "LICENSE"
+  ]
 }

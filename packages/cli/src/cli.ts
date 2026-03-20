@@ -59,7 +59,7 @@ program
 
     // Validate API key
     const apiKey = options.apiKey ?? process.env.ANTHROPIC_API_KEY
-    if (options.ai !== false && !apiKey) {
+    if (!options.noAi && !apiKey) {
       console.error(chalk.red(`
   ✖ No Anthropic API key found.
 
@@ -111,7 +111,8 @@ program
       console.log()
 
       console.log(chalk.bold('  Skill scores'))
-      for (const [skill, score] of Object.entries(report.healthScore.breakdown)) {
+      for (const [skill, scoreValue] of Object.entries(report.healthScore.breakdown)) {
+        const score = scoreValue as number
         const bar = '█'.repeat(Math.round(score / 10)) + '░'.repeat(10 - Math.round(score / 10))
         const color = score >= 75 ? chalk.green : score >= 50 ? chalk.yellow : chalk.red
         console.log(`  ${skill.padEnd(20)} ${color(bar)} ${score}/100`)
